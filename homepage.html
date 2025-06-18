@@ -386,10 +386,19 @@
     document.addEventListener("DOMContentLoaded", () => {
         alert("Bem-vinda, Mayumi! 🐱💖");
 
+        // Mostra cliques no menu
         const links = document.querySelectorAll("nav a");
         links.forEach(link => {
             link.addEventListener("click", () => {
                 console.log(`Você clicou em: ${link.textContent}`);
+            });
+        });
+
+        // Marcar itens como concluído
+        const itensTabela = document.querySelectorAll("td ul li");
+        itensTabela.forEach(item => {
+            item.addEventListener("click", () => {
+                item.classList.toggle("concluido");
             });
         });
     });

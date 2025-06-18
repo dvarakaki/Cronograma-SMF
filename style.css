@@ -200,3 +200,19 @@ body::after {
         font-size: 0.85rem;
     }
 }
+li.concluido {
+    text-decoration: line-through;
+    color: #43aa8b;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+td ul li {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+td ul li:hover {
+    background-color: #ffe2ec;
+}
